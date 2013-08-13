@@ -63,10 +63,14 @@ ul.posts span {
   line-height: 1.5em;*/
 }
 
+.header {
+  background: url('../Assets/Images/textured_paper.png');
+}
+
 .site .header a {
   font-weight: bold;
   text-decoration: none;
-  background-color: blue;
+  /*background-color: blue;*/
   width: 100%;
 }
 
@@ -78,22 +82,38 @@ ul.posts span {
   font-family: 'IM Fell Double Pica', serif;
 }
 
+.links {
+  text-align: right;
+  font-family: 'Bad Script', cursive;
+  color: red;
+  font-size: xx-large;
+  margin-right: 5em;
+}
+
 .site .header h1.title a {
-  color: #a00;
+  text-align: right;
+  /*color: #a00;*/
+  /*background-color: blue;*/
+  font-size: large;
+  margin-right: 5em;
 }
 
 .site .header h1.title a:hover {
+  text-align: right;
   color: #000;
 }
 
 .site .header a.extra {
-  background-color: gray;
+  text-align: right;
+  /*background-color: blue;*/
   color: #aaa;
   margin-left: 1em;
+  font-size: large;
 }
 
 .site .header a.extra:hover {
   color: #000;
+  text-align: right;
 }
 
 .site .meta {
@@ -189,6 +209,8 @@ ul.posts span {
 
 #intro{
   background:url('../Assets/Images/me.png') 50% 0 no-repeat fixed;
+  background-size: cover;
+  /*background-color: orange;*/
   color: black;
   height: 700px;
   margin: 0 auto;
