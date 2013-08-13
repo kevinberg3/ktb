@@ -70,7 +70,7 @@ ul.posts span {
   width: 100%;
 }
 
-.site .header h6.title {
+.site .header h1.title {
   text-indent: 75px;
   font-size: xx-large;
   text-align: left;
@@ -87,6 +87,7 @@ ul.posts span {
 }
 
 .site .header a.extra {
+  background-color: gray;
   color: #aaa;
   margin-left: 1em;
 }
@@ -196,9 +197,10 @@ ul.posts span {
 }
 
 #second{
-  background: url('../Assets/Images/oldcar.jpg') 50% 0 no-repeat fixed;
+  /*background: url('../Assets/Images/oldcar.jpg') 50% 0 no-repeat fixed;*/
+  background-color: gray;
   color: red;
-  height: 600px;
+  height: 100%;
   margin: 0 auto;
   overflow: hidden;
   padding: 0;
@@ -206,7 +208,7 @@ ul.posts span {
 }
 
 #second .bg{
-  background: url(images/trainers.png) 50% 0 no-repeat fixed;
+  /*background: url(images/trainers.png) 50% 0 no-repeat fixed;*/
   height: 600px;
   margin: 0 auto;
   padding: 0;
