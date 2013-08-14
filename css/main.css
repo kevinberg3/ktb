@@ -56,6 +56,7 @@ ul.posts span {
 /*****************************************************************************/
 
 .site {
+  padding: 75px;
  /* font-size: 115%;
   text-align: justify;
   width: 42em;
@@ -205,6 +206,7 @@ ul.posts span {
   font-family: 'IM Fell Double Pica', serif;
   text-align: left;
   text-indent: 75px ;
+  padding: 100px;
 
 }
 .container .sections h1 {
@@ -213,13 +215,23 @@ ul.posts span {
   color: black;
 }
 
+.p-container {
+  width: 60%;
+}
+
 .container {
   height: 5000px;
   z-index: 5000;
 }
 
 p {
-  text-align=justify;
+  text-align: left;
+  color: black;
+  font-size: large;
+}
+
+p .link_back {
+  bottom: 10px;
 
 }
 
@@ -234,7 +246,7 @@ p {
   width: 100%;
 }
 
-#second{
+/*#second{
   /*background: url('../Assets/Images/oldcar.jpg') 50% 0 no-repeat fixed;*/
   background-color: gray;
   color: red;
@@ -245,7 +257,7 @@ p {
   width: 100%;
   padding: 75px;
 }
-
+*/
 #second .bg{
   /*background: url(images/trainers.png) 50% 0 no-repeat fixed;*/
   height: 600px;
@@ -257,14 +269,14 @@ p {
 }
 
 #third{
-  background-color: blue;
-  color: blue;
+  background: url('../Assets/Images/mooning.png');
+  /*color: blue;*/
   height: 650px;
   padding: 100px 0 0 0; 
 }
 
 #fourth{
-  background-color: #ccc;
+  background: url('../Assets/Images/retina_wood.png');
   height: 400px;
   margin: 0 auto;
   padding: 40px 0 0 0;
