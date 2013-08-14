@@ -135,10 +135,12 @@ ul.posts span {
 .site .footer .contact {
   float: left;
   margin-right: 3em;
+  text-align: center;
 }
 
 .site .footer .contact a {
   color: #8085C1;
+  text-align: center;
 }
 
 .site .footer .rss {
