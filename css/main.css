@@ -83,6 +83,11 @@ ul.posts span {
 }
 
 .links {
+  position: absolute;
+  right:0;
+  top:0;
+  float: right;
+  display: block;
   text-align: right;
   font-family: 'Bad Script', cursive;
   font-size: xx-large;
@@ -194,15 +199,28 @@ ul.posts span {
 }
 
 #second {
-  background-color: gray;
+  background: url("../Assets/Images/squairy_light.png");
   width: 100%;
   height: 100%;
+  font-family: 'IM Fell Double Pica', serif;
+  text-align: left;
+  text-indent: 75px ;
 
+}
+.container .sections h1 {
+  font-family: 'Bad Script', cursive;
+  font-size: xx-large;
+  color: black;
 }
 
 .container {
   height: 5000px;
   z-index: 5000;
+}
+
+p {
+  text-align=justify;
+
 }
 
 #intro{
@@ -225,6 +243,7 @@ ul.posts span {
   overflow: hidden;
   padding: 0;
   width: 100%;
+  padding: 75px;
 }
 
 #second .bg{
