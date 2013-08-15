@@ -102,6 +102,10 @@ ul.posts span {
   font-size: large;
 }
 
+.contact-me {
+  text-align: center;
+}
+
 .site .header h1.title a:hover {
   text-align: right;
   color: #000;
