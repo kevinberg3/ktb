@@ -27,7 +27,7 @@
           <h1 class="title">Kevin Berg</h1>
           <div class="links">
             <a class="extra" href="/">home</a> 
-            <a href="#second" class="arctic_scroll" data-position="1200">about</a>
+            <a href="#second" >about</a>
             <a class="extra" href="#third">work</a>
             <a class="extra" href="/">blog</a>
             <a class="extra" href="#fourth">find me</a> 
@@ -92,8 +92,16 @@
               
           </div>
 
+         <script>
+       $('.extra').on('click', function() {
+         $.smoothScroll({
+           scrollElement: $('#second'),
+           scrollTarget: '#second'
+         });
+         return false;
+       });
 
-            
+        </script>  
           
             
         <script>
@@ -101,5 +109,6 @@
             $('.sections').height($(window).height());
         });
         </script>
+        
     </body>
 </html>
