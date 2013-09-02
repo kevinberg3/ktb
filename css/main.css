@@ -81,10 +81,11 @@ ul.posts span {
   text-align: left;
   margin-bottom: 1em;
   font-family: 'IM Fell Double Pica', serif;
+
 }
 
 .links {
-  position: absolute;
+  position: fixed;
   right:0;
   top:0;
   float: right;
@@ -106,15 +107,17 @@ ul.posts span {
   text-align: center;
 }
 
-.site .header h1.title a:hover {
+.site .header .links a:hover {
   text-align: right;
-  color: #000;
+  color: blue;
+}
+
+.site .header .links a.extra:active {
+  text-decoration: underline;
 }
 
 .site .header a.extra {
   text-align: right;
-  /*background-color: blue;*/
-  /*color: #aaa;*/
   margin-left: 1em;
   font-size: large;
 }
@@ -131,12 +134,13 @@ ul.posts span {
 .site .footer {
   font-size: 80%;
   color: #666;
-  border-top: 4px solid #eee;
+  margin: 0 auto;
   margin-top: 2em;
+  text-align: center;
   overflow: hidden;
 }
 
-.site .footer .contact {
+.site .footer .contact h1 {
   float: left;
   margin-right: 3em;
   text-align: center;
@@ -207,13 +211,15 @@ ul.posts span {
 
 #second {
   background: url("../Assets/Images/squairy_light.png");
-  width: 100%;
   height: 100%;
   font-family: 'IM Fell Double Pica', serif;
   text-align: left;
   text-indent: 75px ;
   padding: 100px;
+}
 
+#fourth .footer .contact p{
+  text-align: center;
 }
 .container .sections h1 {
   font-family: 'Bad Script', cursive;
@@ -221,8 +227,10 @@ ul.posts span {
   color: black;
 }
 
-.p-container {
-  width: 60%;
+.footer .contact {
+  text-align: center;
+  position: center;
+  /*width: 60%;*/
 }
 
 .container {
@@ -252,20 +260,9 @@ p .link_back {
   width: 100%;
 }
 
-/*#second{
-  /*background: url('../Assets/Images/oldcar.jpg') 50% 0 no-repeat fixed;*/
-  background-color: gray;
-  color: red;
-  height: 100%;
-  margin: 0 auto;
-  overflow: hidden;
-  padding: 0;
-  width: 100%;
-  padding: 75px;
-}
-*/
+
 #second .bg{
-  /*background: url(images/trainers.png) 50% 0 no-repeat fixed;*/
+    
   height: 600px;
   margin: 0 auto;
   padding: 0;
@@ -277,8 +274,12 @@ p .link_back {
 #third{
   background: url('../Assets/Images/mooning.png');
   /*color: blue;*/
-  height: 650px;
   padding: 100px 0 0 0; 
+  height: 100%;
+  font-family: 'IM Fell Double Pica', serif;
+  text-align: left;
+  text-indent: 75px ;
+  padding: 100px;
 }
 
 #fourth{
