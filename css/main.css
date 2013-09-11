@@ -235,7 +235,6 @@ p .link_back {
 #intro{
   background:url('../Assets/Images/me.png') 50% 0 no-repeat fixed;
   background-size: cover;
-  /*background-color: orange;*/
   color: black;
   height: 700px;
   margin: 0 auto;
