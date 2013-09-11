@@ -303,7 +303,7 @@ p .link_back {
 .back-to-top {
     position: fixed;
     bottom: .5em;
-    right: 80px;
+    right: 65px;
     text-decoration: none;
     color: white;
     background-color: ##D0D0D0;
