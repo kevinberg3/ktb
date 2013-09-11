@@ -112,7 +112,7 @@ ul.posts span {
   color: blue;
 }
 
-.site .header .links a.extra:active {
+.site .header .links a.selected {
   text-decoration: underline;
 }
 
@@ -303,12 +303,12 @@ p .link_back {
 .back-to-top {
     position: fixed;
     bottom: .5em;
-    right: 100px;
+    right: 80px;
     text-decoration: none;
     color: white;
-    background-color: ##00FF00;
+    background-color: ##D0D0D0;
 
-    font-size: 14px;
+    font-size: 18px;
     padding: 1em;
     display: none;
 }
