@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
         <script src="http://code.jquery.com/jquery-latest.min.js"
                 type="text/javascript"></script>
+        <script src="/path/to/waypoints.min.js"></script>
         <title>Kevin Berg</title>
         <meta name="viewport" content="width=device-width">
 
@@ -26,11 +27,11 @@
             <br />
             <h1 class="title">Kevin Berg</h1> -->
           <div class="links">
-            <a class="extra" href="/">home</a> 
-            <a class="extra" href="#second" >about</a>
-            <a class="extra" href="#third">work</a>
-            <a class="extra" href="/">blog</a>
-            <a class="extra" href="#fourth">find me</a> 
+            <a class="extra" id="homelink" href="#intro">home</a> 
+            <a class="extra" id="aboutlink" href="#second" >about</a>
+            <a class="extra" id="worklink" href="#third">work</a>
+            <a class="extra" href="blog.html">blog</a>
+            <a class="extra" id="contactlink" href="#fourth">find me</a> 
           </div>
         </div>
           <div class="container">
@@ -67,7 +68,7 @@
                     I recently attended and completed a 10 week boot-camp in full stack web development. You can check out my assignments and my final project on GitHub. I'll be updating my portfolio as I continue to learn and develop my skills.
                   </p>
                   <p>
-                    Over the past 5 years, I've obtained experience in capital markets, including extensive exposure to financial reporting and analysis, international financial reporting standards and financial modelling. I've worked across several industries including tech, mining and industrials.
+                    Over the past 5 years, I've obtained experience in capital markets, including extensive exposure to financial reporting and analysis, international financial reporting standards and financial modelling. I've worked across several industries including tech, mining and industrials in both the private and public sectors. I've also obtained 
                   </p>
                 </div>
             </div>
@@ -89,27 +90,22 @@
                     </div>
                   </div>
                 </div>
-              </div> <!-- /container -->
+              </div> 
             </div>
-         
-            
-         
-              <!-- {{ content }} -->
-
-            
-              
           </div>
 
          <script>
-       $('.extra').on('click', function() {
-         $.smoothScroll({
-           scrollElement: $('#second'),
-           scrollTarget: '#second'
-         });
-         return false;
-       });
+         $(document).ready(function(){
+           $('.extra').on('click', function() {
+             $.smoothScroll({
+               scrollElement: $('#second'),
+               scrollTarget: '#second'
+             });
+             return false;
+           });
+          });
 
-        </script>  
+        </script>   
           
             
         <script>
@@ -117,6 +113,43 @@
             $('.sections').height($(window).height());
         });
         </script>
-        
+
+        // <script>
+        //   $(document).ready(function(){
+        //     $(.sections).on('hover', )
+        //   });
+        // </script>
+
+        <script>
+          $("#aboutlink").click(function() {
+            $('html, body').animate({
+                scrollTop: $("#second").offset().top
+            }, 750);
+          });
+        </script>
+
+        <script>
+        $("#worklink").click(function() {
+          $('html, body').animate({
+              scrollTop: $("#third").offset().top
+          }, 750);
+        });
+        </script>
+
+        <script>
+        $("#contactlink").click(function() {
+          $('html, body').animate({
+              scrollTop: $("#fourth").offset().top
+          }, 750);
+        });
+        </script>
+
+        <script>
+        $("#homelink").click(function() {
+          $('html, body').animate({
+              scrollTop: $("#intro").offset().top
+          }, 750);
+        });
+        </script>
     </body>
 </html>
