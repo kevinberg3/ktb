@@ -6,6 +6,7 @@
         <script src="http://code.jquery.com/jquery-latest.min.js"
                 type="text/javascript"></script>
         <script src="/path/to/waypoints.min.js"></script>
+
         <title>Kevin Berg</title>
         <meta name="viewport" content="width=device-width">
 
@@ -49,26 +50,29 @@
               
               <p>After that, I started working at PwC (big accounting firm), where I've spent the past couple of years gaining experience in the the financial reporting and operations of mining and tech companies. I also learned some excel and financial modelling skills while I was at it. They threw in a cool designation with letters to add to my name too.</p>
               
-              <p>Somewhere along the way, I became obsessed with learning and how to make new things. I ultimately stumbled upon a school called Bitmaker Labs, which was able to teach me how to become an entry level developer in 9 weeks. This site is a function of my experience there </p>
+              <p>Somewhere along the way, I became obsessed with learning and how to make new things. I ultimately stumbled upon a school called Bitmaker Labs, which was able to teach me how to become an entry level developer in 9 weeks. This site is a product of my experience there.</p>
 
-              <p>In my free time, I enjoy playing sports, camping and learning about pretty much anything that's foreign to me. I'm a dead-eye shooting guard on the basketball court and can be found cycling in a peleton on weekends.</p>
+              <p>In my free time, I enjoy playing sports, camping and learning about pretty much anything that's foreign to me. I'm a dead-eye shooting guard on the basketball court and can be found cycling in a peleton on weekends. I also hope to one day cycle through South America and learn Spanish.</p>
+
               </br>
               </br>
               </br>
               </br>
-          
-              <a class="link_back" href="#top">Back to Top</a>
-            </div>
+              <a href="#top" class="back-to-top">Back to Top</a>
+
+              </div>
             </div>
 
             <div class="sections" id="third">
               <div class="p-container">
-                <h1><strong>Work<strong></h1>
+                <h1><strong>Work</strong></h1>
                   <p>
-                    I recently attended and completed a 10 week boot-camp in full stack web development. You can check out my assignments and my final project on GitHub. I'll be updating my portfolio as I continue to learn and develop my skills.
+                    I recently attended and completed a 10 week boot-camp in full stack web development. You can check out my assignments and my <a href="http://showspace.herokuapp.com/" target="_blank">final project</a> on GitHub. I'll be updating my portfolio as I continue to learn and develop my skills. Check out links to my final project and github page below.
                   </p>
+                 <a href="http://github.com/kevinberg3/" target="_blank"> <img src="../Assets/Images/github.png"></a>
+
                   <p>
-                    Over the past 5 years, I've obtained experience in capital markets, including extensive exposure to financial reporting and analysis, international financial reporting standards and financial modelling. I've worked across several industries including tech, mining and industrials in both the private and public sectors. I've also obtained 
+                    I'm a Chartered Accountant (CPA, CA), that qualified in 2012. I've also started the process towards earning my CFA (Certified Financial Analyst). Over the past 5 years, I've obtained experience in capital markets, including extensive exposure to financial reporting and analysis, international financial reporting standards and financial modelling. I've worked across several industries including tech, mining and industrials in both the private and public sectors. I've also worked alongside several companies raising financing through public offerings and prospectuses on both the Toronto Stock Exchange and New York Stock Exchange. I also have several years experience performing audits of public and private companies. I was also lucky enough to work on some thought leadership within the mining industry and made contributions to PwC's annual journal mine publication. Here's a <a href="http://www.pwc.com/ca/en/junior-mining-headquarters/junior-mine-review-of-trends-in-tsx-v-mining-industry.jhtml" target="_blank">link</a> for the 2012 publication; the 2013 report is scheduled to come out in the fall.
                   </p>
                 </div>
             </div>
@@ -114,12 +118,6 @@
         });
         </script>
 
-        // <script>
-        //   $(document).ready(function(){
-        //     $(.sections).on('hover', )
-        //   });
-        // </script>
-
         <script>
           $("#aboutlink").click(function() {
             $('html, body').animate({
@@ -151,5 +149,24 @@
           }, 750);
         });
         </script>
+      <script>
+      jQuery(document).ready(function() {
+          var offset = 220;
+          var duration = 500;
+          jQuery(window).scroll(function() {
+              if (jQuery(this).scrollTop() > offset) {
+                  jQuery('.back-to-top').fadeIn(duration);
+              } else {
+                  jQuery('.back-to-top').fadeOut(duration);
+              }
+          });
+          
+          jQuery('.back-to-top').click(function(event) {
+              event.preventDefault();
+              jQuery('html, body').animate({scrollTop: 0}, duration);
+              return false;
+          })
+      });
+      </script>
     </body>
 </html>

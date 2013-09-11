@@ -199,24 +199,7 @@ ul.posts span {
   background-color: #333;
 }
 
-#first {
-  background: url('../Assets/Images/me.png') no-repeat;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -5000;
-  height: 100%;
-}
 
-#second {
-  background: url("../Assets/Images/squairy_light.png");
-  height: 100%;
-  font-family: 'IM Fell Double Pica', serif;
-  text-align: left;
-  text-indent: 75px ;
-  padding: 100px;
-}
 
 #fourth .footer .contact p{
   text-align: center;
@@ -271,14 +254,29 @@ p .link_back {
   z-index: 200;
 }
 
-#third{
-  background: url('../Assets/Images/mooning.png');
-  /*color: blue;*/
-  padding: 100px 0 0 0; 
+#first {
+  background: url('../Assets/Images/me.png') no-repeat;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -5000;
+  height: 100%;
+}
+
+#second {
+  background: url("../Assets/Images/squairy_light.png");
   height: 100%;
   font-family: 'IM Fell Double Pica', serif;
   text-align: left;
-  text-indent: 75px ;
+  padding: 100px;
+}
+
+#third{
+  background: url('../Assets/Images/mooning.png');
+  height: 100%;
+  font-family: 'IM Fell Double Pica', serif;
+  text-align: left;
   padding: 100px;
 }
 
@@ -300,5 +298,22 @@ p .link_back {
   padding: 100px 0 0 0;
   position: relative;
   width: 350px; 
+}
+
+.back-to-top {
+    position: fixed;
+    bottom: .5em;
+    right: 100px;
+    text-decoration: none;
+    color: white;
+    background-color: ##00FF00;
+
+    font-size: 14px;
+    padding: 1em;
+    display: none;
+}
+
+.back-to-top:hover {    
+    background-color: rgba(135, 135, 135, 0.50);
 }
 
