@@ -20,9 +20,13 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-size: 100%; }
+  font-size: 100%;
+  text-align: center; }
 
-h1 { margin-bottom: 1em; }
+h1 { margin-bottom: 1em;
+  
+  
+ }
 p { margin: 1em 0; }
 
 a         { color: #00a; }
@@ -57,12 +61,7 @@ ul.posts span {
 
 .site {
   padding: 75px;
- /* font-size: 115%;
-  text-align: justify;
-  width: 42em;
-  margin: 3em auto 2em;
-  line-height: 1.5em;*/
-}
+ }
 
 .header {
   background: url('../Assets/Images/textured_paper.png');
@@ -71,7 +70,6 @@ ul.posts span {
 .site .header a {
   font-weight: bold;
   text-decoration: none;
-  /*background-color: blue;*/
   width: 100%;
 }
 
@@ -240,7 +238,11 @@ p .link_back {
   margin: 0 auto;
   padding: 0;
   width: 100%;
-}
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: solid;
+  }
 
 
 #second .bg{
@@ -261,6 +263,10 @@ p .link_back {
   left: 0;
   z-index: -5000;
   height: 100%;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: solid;
 }
 
 #second {
@@ -269,6 +275,10 @@ p .link_back {
   font-family: 'IM Fell Double Pica', serif;
   text-align: left;
   padding: 100px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: solid;
 }
 
 #third{
@@ -277,6 +287,10 @@ p .link_back {
   font-family: 'IM Fell Double Pica', serif;
   text-align: left;
   padding: 100px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: solid;
 }
 
 #fourth{
@@ -284,6 +298,10 @@ p .link_back {
   height: 100%;
   margin: 0 auto;
   padding: 40px 0 0 0;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  border: solid;
 }
 
 .story{
@@ -302,13 +320,13 @@ p .link_back {
 .back-to-top {
     position: fixed;
     bottom: .5em;
-    right: 65px;
+    right: 75px;
     text-decoration: none;
     color: white;
     background-color: ##D0D0D0;
 
     font-size: 18px;
-    padding: 1em;
+    padding: .5em;
     display: none;
 }
 
